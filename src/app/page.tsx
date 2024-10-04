@@ -1,7 +1,10 @@
 export default function Home() {
   return (
     <div>
-      <p>Website Title Placeholder</p>
+      <div className="container mx-auto">
+        <br />
+        <h1>Website Title Placeholder</h1>
+      </div>
     </div>
   );
 }
