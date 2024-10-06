@@ -7,9 +7,7 @@ const Card: React.FC<{
   className?: string;
   children: React.ReactNode;
 }> = ({ className, children }) => {
-  return (
-    <div className={`card shadow-xl bg-base-300 ${className}`}>{children}</div>
-  );
+  return <div className={`card shadow-xl ${className}`}>{children}</div>;
 };
 
 export default Card;
