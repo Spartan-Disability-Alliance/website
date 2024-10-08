@@ -25,10 +25,21 @@ const config: Config = {
             opacity: "1",
           },
         },
+        "fade-in-left": {
+          "0%": {
+            transform: "translateX(-30px)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "fade-in-top": "fade-in-top 0.7s ease-out forwards",
         "fade-in-bottom": "fade-in-bottom 0.7s ease-out forwards",
+        "fade-in-left": "fade-in-left 0.7s ease-out forwards",
       },
     },
   },
