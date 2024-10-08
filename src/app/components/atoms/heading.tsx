@@ -5,7 +5,7 @@ interface HeadingProps {
   children: React.ReactNode;
 }
 
-const Heading: React.FC<HeadingProps> = ({ className = '', children }) => {
+const Heading: React.FC<HeadingProps> = ({ className = "", children }) => {
   const defaultClasses = "text-5xl text-center mb-8 animate-fade-in-top";
   const combinedClasses = `${defaultClasses} ${className}`;
 
