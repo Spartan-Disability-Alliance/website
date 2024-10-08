@@ -15,7 +15,10 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ title, links }) => {
         </h2>
         <ul className="pt-4 space-y-3">
           {links.map((link, index) => (
-            <li key={index} className="transition-transform duration-200 hover:translate-x-1">
+            <li
+              key={index}
+              className="transition-transform duration-200 hover:translate-x-1"
+            >
               <a
                 href={link.url}
                 target="_blank"

@@ -8,7 +8,11 @@ export default function EventsPage() {
     <div className="container mx-auto py-20 px-4">
       <Heading>Resources</Heading>
       {data.resources.map((resource, index) => (
-        <ResourceCard key={index} title={resource.title} links={resource.links} />
+        <ResourceCard
+          key={index}
+          title={resource.title}
+          links={resource.links}
+        />
       ))}
     </div>
   );
