@@ -1,7 +1,7 @@
 import OfficerCard, { Officer } from "../molecules/officer-card";
 import { promises as fs } from "fs";
 
-export default async function Officers() {
+export default async function Officers({ width }: { width: string | number }) {
   const file = await fs.readFile(
     process.cwd() + "/src/app/assets/data.json",
     "utf8",
@@ -9,7 +9,10 @@ export default async function Officers() {
   const data = JSON.parse(file);
   const officers: Officer[] = data.officers;
   return (
-    <div className="officer-cards flex flex-wrap justify-center gap-4">
+    <div
+      className="officer-cards flex flex-wrap justify-center gap-4"
+      style={{ maxWidth: width }}
+    >
       {officers.map((officer, i) => {
         return (
           <OfficerCard
