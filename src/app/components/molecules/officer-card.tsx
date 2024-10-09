@@ -34,7 +34,13 @@ const OfficerCard: React.FC<Officer> = (officer) => {
       </figure>
       <div className="card-body pl-0">
         {/* might need to revisit what to do with long names later*/}
-        <h2 className="card-title overflow-hidden text-ellipsis text-nowrap w-36">
+        <h2
+          className="card-title overflow-hidden text-nowrap w-36"
+          style={{
+            maskImage:
+              "linear-gradient(to right, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0))",
+          }}
+        >
           {officer.name}
         </h2>
         <p>{officer.role ?? "Officer"}</p>

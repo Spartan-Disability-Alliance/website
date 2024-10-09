@@ -10,7 +10,7 @@ export default async function Officers({ width }: { width: string | number }) {
   const officers: Officer[] = data.officers;
   return (
     <div
-      className="officer-cards flex flex-wrap justify-center gap-4"
+      className="officer-cards flex flex-wrap justify-center gap-4 mx-auto"
       style={{ maxWidth: width }}
     >
       {officers.map((officer, i) => {
