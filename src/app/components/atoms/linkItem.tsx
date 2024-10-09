@@ -11,7 +11,7 @@ const NavButton: React.FC<NavButtonProps> = ({ href, children, className }) => {
   return (
     <Link
       href={href}
-      className={`hover:bg-neutral-content hover:scale-110 hover:text-primary-content rounded-lg transition-all p-3 text-lg ${className}`}
+      className={`hover:bg-neutral-content hover:scale-110 delay-50 ease-out duration-300 hover:text-primary-content rounded-lg transition-all p-3 text-lg ${className}`}
     >
       {children}
     </Link>

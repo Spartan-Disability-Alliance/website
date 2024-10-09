@@ -31,5 +31,67 @@
     {
       "name": "Really long nameeeeeeeeeeee"
     }
+  ],
+  
+  "resources": [
+    {
+      "title": "SJSU Resources",
+      "links": [
+        {
+          "name": "Accessible Education Center (AEC)",
+          "url": "https://www.sjsu.edu/aec/"
+        },
+        {
+          "name": "Accessible Campus Map",
+          "url": "https://www.sjsu.edu/map/docs/21-0723_SJSU_Main-Campus_Map.pdf"
+        },
+        {
+          "name": "Complaints regarding AEC accommodations",
+          "url": "https://www.sjsu.edu/aec/filingacomplaint/aecgrievance.php"
+        },
+        {
+          "name": "Complaints regarding accessibility on campus",
+          "url": "https://cm.maxient.com/reportingform.php?SanJoseStateUniv&layout_id=4"
+        },
+        {
+          "name": "SJSU Office of Equal Opportunity Complaint",
+          "url": "https://www.sjsu.edu/aec/filingacomplaint/officeofeo.php"
+        }
+      ]
+    },
+    {
+      "title": "California Resources",
+      "links": [
+        {
+          "name": "California Department of Rehabilitation",
+          "url": "https://www.dor.ca.gov/"
+        },
+        {
+          "name": "Medi-Cal (California Medicaid)",
+          "url": "https://www.coveredca.com/health/medi-cal/"
+        },
+        {
+          "name": "In-Home Supportive Services",
+          "url": "https://www.cdss.ca.gov/in-home-supportive-services"
+        },
+        {
+          "name": "San Andreas Regional Center",
+          "url": "https://www.sanandreasregional.org/"
+        }
+      ]
+    },
+    {
+      "title": "Federal Resources",
+      "links": [
+        {
+          "name": "United States Office for Civil Rights: Discrimination Complaint",
+          "url": "https://www2.ed.gov/about/offices/list/ocr/docs/howto.html"
+        },
+        {
+          "name": "United States Americans with Disabilities Act (ADA) Complaint Process",
+          "url": "https://www.ada.gov/file-a-complaint/"
+        }
+      ]
+    }
   ]
 }
