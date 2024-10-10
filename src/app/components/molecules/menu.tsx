@@ -16,7 +16,7 @@ const Menu: React.FC = () => {
         <Icon />
       </Button>
       {isMenuOpen && (
-        <ul className="menu dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <ul className="menu dropdown-content mt-3 p-2 z-10 shadow bg-base-100 rounded-box w-52">
           <NavbarLinks />
         </ul>
       )}
