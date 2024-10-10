@@ -18,7 +18,7 @@ const SocialBtn: React.FC<SocialBtnProps> = ({ href, icon, text }) => {
           className={`h-20 w-full flex items-center justify-center space-x-2 rounded-lg border-none bg-gray-800 hover:scale-110 ease-out duration-300 hover:bg-gray-700 animate-fade-in-bottom`}
         >
           <span className={`icon`} dangerouslySetInnerHTML={{ __html: icon }} />
-          <span>{text}</span>
+          <span className="text-lg">{text}</span>
         </Button>
       </a>
     </Link>
