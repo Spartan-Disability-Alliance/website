@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ onClick, children, className }) => {
   return (
-    <button className={`btn ${className}`} onClick={onClick}>
+    <button className={`shadow-xl btn ${className}`} onClick={onClick}>
       {children}
     </button>
   );
