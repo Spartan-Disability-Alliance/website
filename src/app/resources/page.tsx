@@ -5,7 +5,7 @@ import ResourceCard from "../components/molecules/resource-card";
 
 export default function EventsPage() {
   return (
-    <div className="container mx-auto py-20 px-4">
+    <div className="container mx-auto py-10 px-8">
       <Heading>Resources</Heading>
       {data.resources.map((resource, index) => (
         <ResourceCard

@@ -5,7 +5,7 @@ import socialLinksData from "../assets/data.json";
 
 export default function ContactPage() {
   return (
-    <div className="container mx-auto py-20">
+    <div className="container mx-auto py-10">
       <Heading>Contact</Heading>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 px-4 max-w-2xl mx-auto">
         {socialLinksData.socialLinks.map((socialLink, index) => (
