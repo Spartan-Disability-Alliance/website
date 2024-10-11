@@ -1,4 +1,32 @@
 {
+  "officers": [
+    {
+      "avatarSrc": "/avatars/anna_ryan.png",
+      "name": "Anna Ryan"
+    },
+    {
+      "avatarSrc": "/avatars/diya_agrawal.png",
+      "name": "Diya Agrawal",
+      "role": "President"
+    },
+    {
+      "avatarSrc": "/avatars/emi_manlulu.png",
+      "name": "Emi Manlulu"
+    },
+    {
+      "avatarSrc": "/avatars/naya_singhania.png",
+      "name": "Naya Singhania"
+    },
+    {
+      "avatarSrc": "/avatars/riya_katyal.png",
+      "name": "Riya Katyal"
+    },
+    {
+      "avatarSrc": "/avatars/sam_ortiz.png",
+      "name": "Sam Ortiz"
+    }
+  ],
+  
   "resources": [
     {
       "title": "SJSU Resources",
@@ -21,7 +49,7 @@
         },
         {
           "name": "SJSU Office of Equal Opportunity Complaint",
-          "url": "https://www.sjsu.edu/aec/filingacomplaint/officeofo.php"
+          "url": "https://www.sjsu.edu/aec/filingacomplaint/officeofeo.php"
         }
       ]
     },
