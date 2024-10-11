@@ -16,7 +16,7 @@ interface UpcomingEventsProps {
 const UpcomingEvents: React.FC<UpcomingEventsProps> = ({ events }) => {
   return (
     <section>
-      <h2 className="text-3xl font-semibold mb-4">Upcoming Events</h2>
+      <h2 className="text-3xl font-semibold mb-4 animate-fade-in-left">Upcoming Events</h2>
       {events.length > 0 ? (
         <div className="grid gap-6 md:grid-cols-2">
           {events.map((event, index) => (
@@ -32,7 +32,7 @@ const UpcomingEvents: React.FC<UpcomingEventsProps> = ({ events }) => {
           ))}
         </div>
       ) : (
-        <Card className="bg-gray-800 border-gray-700 p-6 text-xl text-gray-400">
+        <Card className="bg-gray-800 border-gray-700 p-6 text-xl text-gray-400 animate-fade-in-bottom">
           No upcoming events at the moment.
         </Card>
       )}

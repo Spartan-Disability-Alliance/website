@@ -26,7 +26,7 @@ const EventCard: React.FC<EventCardProps> = ({
   const formattedTimeRange = `${start.toLocaleTimeString([], { hour: "numeric", minute: "2-digit", hour12: true })} - ${end.toLocaleTimeString([], { hour: "numeric", minute: "2-digit", hour12: true })}`;
 
   return (
-    <Card className="bg-gray-800 border-gray-700 p-4">
+    <Card className="bg-gray-800 border-gray-700 p-4 animate-fade-in-bottom">
       {image && (
         <Image
           src={image}
