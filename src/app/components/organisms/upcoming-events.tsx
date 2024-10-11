@@ -33,7 +33,7 @@ const UpcomingEvents: React.FC<UpcomingEventsProps> = ({ events }) => {
         </div>
       ) : (
         <Card className="bg-gray-800 border-gray-700 p-6 text-xl text-gray-400 animate-fade-in-bottom">
-          No upcoming events at the moment.
+          No upcoming events. Check back for updates!
         </Card>
       )}
     </section>
