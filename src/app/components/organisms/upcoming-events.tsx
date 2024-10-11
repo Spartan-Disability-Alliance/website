@@ -16,7 +16,9 @@ interface UpcomingEventsProps {
 const UpcomingEvents: React.FC<UpcomingEventsProps> = ({ events }) => {
   return (
     <section>
-      <h2 className="text-3xl font-semibold mb-4 animate-fade-in-left">Upcoming Events</h2>
+      <h2 className="text-3xl font-semibold mb-4 animate-fade-in-left">
+        Upcoming Events
+      </h2>
       {events.length > 0 ? (
         <div className="grid gap-6 grid-cols-1">
           {events.map((event, index) => (

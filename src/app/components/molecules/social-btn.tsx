@@ -12,7 +12,12 @@ interface SocialBtnProps {
 const SocialBtn: React.FC<SocialBtnProps> = ({ href, icon, text }) => {
   return (
     <Link href={href} legacyBehavior passHref>
-      <a target="_blank" rel="noopener noreferrer" className="w-full">
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full"
+      >
         <Button
           onClick={() => {}}
           className={`h-20 w-full flex items-center justify-center space-x-2 rounded-lg border-none bg-gray-800 hover:scale-110 ease-out duration-300 hover:bg-gray-700 animate-fade-in-bottom`}
