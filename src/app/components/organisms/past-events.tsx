@@ -1,4 +1,3 @@
-// src/components/organisms/PastEvents.tsx
 import React from "react";
 import EventCard from "../molecules/event-card";
 
@@ -8,6 +7,8 @@ interface PastEventsProps {
     description: string;
     image?: string;
     date: string;
+    startTime: string;
+    endTime: string;
   }[];
 }
 
@@ -23,6 +24,8 @@ const PastEvents: React.FC<PastEventsProps> = ({ events }) => {
             description={event.description}
             image={event.image}
             date={event.date}
+            startTime={event.startTime}
+            endTime={event.endTime}
           />
         ))}
       </div>

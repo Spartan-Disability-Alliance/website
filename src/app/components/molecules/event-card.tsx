@@ -1,4 +1,3 @@
-// src/components/molecules/EventCard.tsx
 import React from "react";
 import Image from "next/image";
 import Card from "../atoms/card";
@@ -8,6 +7,8 @@ interface EventCardProps {
   description: string;
   image?: string;
   date: string;
+  startTime: string;
+  endTime: string;
 }
 
 const EventCard: React.FC<EventCardProps> = ({
@@ -15,8 +16,15 @@ const EventCard: React.FC<EventCardProps> = ({
   description,
   image,
   date,
+  startTime,
+  endTime,
 }) => {
   const eventDate = new Date(date + "T00:00:00");
+  const start = new Date(`${date}T${startTime}`);
+  const end = new Date(`${date}T${endTime}`);
+  const formattedDate = eventDate.toLocaleDateString();
+  const formattedTimeRange = `${start.toLocaleTimeString([], { hour: "numeric", minute: "2-digit", hour12: true })} - ${end.toLocaleTimeString([], { hour: "numeric", minute: "2-digit", hour12: true })}`;
+
   return (
     <Card className="bg-gray-800 border-gray-700 p-4">
       {image && (
@@ -30,8 +38,8 @@ const EventCard: React.FC<EventCardProps> = ({
       )}
       <div className="card-header mt-2">
         <h3 className="text-2xl font-semibold text-gray-100">{title}</h3>
-        <p className="text-md text-gray-400">
-          {eventDate.toLocaleDateString()}
+        <p className="text-lg text-gray-400">
+          {formattedDate} at {formattedTimeRange}
         </p>
       </div>
       <div className="card-content mt-2">

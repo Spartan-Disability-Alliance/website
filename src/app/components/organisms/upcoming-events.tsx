@@ -8,6 +8,8 @@ interface UpcomingEventsProps {
     description: string;
     image?: string;
     date: string;
+    startTime: string;
+    endTime: string;
   }[];
 }
 
@@ -24,6 +26,8 @@ const UpcomingEvents: React.FC<UpcomingEventsProps> = ({ events }) => {
               description={event.description}
               image={event.image}
               date={event.date}
+              startTime={event.startTime}
+              endTime={event.endTime}
             />
           ))}
         </div>

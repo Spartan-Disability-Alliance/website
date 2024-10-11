@@ -115,17 +115,23 @@
     {
       "title": "Employment & Disability",
       "description": "We hosted Lillian Filpot with the Department of Rehabilitation on Thursday, March 14th. The session covered employment, job goals, and accommodations.",
-      "date": "2024-10-10"
+      "date": "2024-03-14",
+      "startTime": "15:00:00",
+      "endTime": "16:00:00"
     },
     {
       "title": "Book Talk and Games",
       "description": "In our first in-person event, members shared their favorite books and played board games, fostering community and creating lasting memories.",
-      "date": "2024-10-20"
+      "date": "2024-03-05",
+      "startTime": "16:00:00",
+      "endTime": "17:00:00"
     },
     {
       "title": "First SDA Meeting",
       "description": "Our first general meeting was a Meet and Greet on Zoom, on February 9th. Members had a chance to meet officers and learn about the semester’s activities.",
-      "date": "2024-10-20"
+      "date": "2024-02-09",
+      "startTime": "15:00:00",
+      "endTime": "16:00:00"
     }
   ]
 }
