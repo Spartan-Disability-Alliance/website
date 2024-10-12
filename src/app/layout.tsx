@@ -7,8 +7,22 @@ import Footer from "./components/organisms/footer";
 const NunitoSans = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Spartan Disability Alliance",
-  description: "A community for SJSU students of all abilities",
+  title: {
+    template: "%s | Spartan Disability Alliance",
+    default: "Spartan Disability Alliance",
+    absolute: "Spartan Disability Alliance",
+  },
+  description: "A community for SJSU students of all abilities.",
+  keywords: ["sjsu", "student", "spartan", "accessibility", "alliance"],
+  openGraph: {
+    url: "https://spartandisabilityalliance.netlify.app",
+    locale: "en_US",
+    type: "website",
+  },
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "cyan" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
 };
 
 export default function RootLayout({
