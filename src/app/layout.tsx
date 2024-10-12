@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./components/organisms/header";
@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "cyan" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
+};
+
+export const viewport: Viewport = {
+  themeColor: [{ media: "(prefers-color-scheme: dark)", color: "black" }],
 };
 
 export default function RootLayout({
